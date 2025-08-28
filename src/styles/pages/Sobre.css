@@ -65,3 +65,61 @@
   justify-content: flex-end;
 }
 
+@media (max-width: 900px) {
+  .flex-sobre {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
+    gap: 32px;
+  }
+
+  .container-sobre {
+    margin: 24px 0 0 0;
+    max-width: 100%;
+    padding: 0 8px;
+  }
+
+  .initial-text h2 {
+    font-size: 24px;
+  }
+
+  .name-text h1 {
+    font-size: 40px;
+  }
+
+  .name-text h2 {
+    font-size: 22px;
+  }
+
+  .container-descricao h2 {
+    font-size: 22px;
+    margin-top: 2rem;
+  }
+
+  .container-descricao p {
+    font-size: 14px;
+  }
+
+  .item-direita {
+    align-items: center;
+    margin: 0;
+  }
+
+  .photo-container {
+    margin: 0 0 24px 0;
+    justify-content: center;
+  }
+
+  .photo-container img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .habilidades-container {
+    margin: 0;
+    justify-content: center;
+    width: 100%;
+  }
+
+}
+

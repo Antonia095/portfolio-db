@@ -35,24 +35,22 @@ const Habilidades = () => {
         <div key={tipo.categoria} className="habilidades-lista">
               <strong>{tipo.categoria}</strong>
               <div className="habilidades-itens">
-                <ul>
-                    {tipo.itens.map((item) => (
-                    <li key={item.nome}>{item.nome}</li>
-                    ))}
-                </ul>
                 <div>
                     {tipo.itens.map((item) => (
-                      <div key={item.nome} className="habilidades-circulos">
-                          {[...Array(maxCirculos)].map((_, i) => (
-                          <span
-                              key={i}
-                              className={
-                              i < item.nivel
-                                  ? 'habilidade-circulo preenchido'
-                                  : 'habilidade-circulo'
-                              }
-                          ></span>
-                          ))}
+                      <div key={item.nome} className="habilidade-linha">
+                        <li>{item.nome}</li>
+                        <div key={item.nome} className="habilidades-circulos">
+                            {[...Array(maxCirculos)].map((_, index) => (
+                            <span
+                                key={index}
+                                className={
+                                index < item.nivel
+                                    ? 'habilidade-circulo preenchido'
+                                    : 'habilidade-circulo'
+                                }
+                            ></span>
+                            ))}
+                        </div>
                       </div>
                     ))}
                 </div>
