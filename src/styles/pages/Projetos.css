@@ -1,0 +1,34 @@
+.projetos-page {
+  padding: 40px 0 0 40px;
+}
+
+.projetos-titulo {
+  font-size: 36px;
+  font-weight: 400;
+  color: #292929;
+  margin-bottom: 10px;
+}
+
+.projetos-subtitulo {
+  font-size: 80px;
+  font-weight: 700;
+  color: #292929;
+  margin-bottom: 20px;
+}
+
+.projetos-lista {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .projetos-lista {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+  .projetos-page {
+    padding: 24px;
+  }
+}
