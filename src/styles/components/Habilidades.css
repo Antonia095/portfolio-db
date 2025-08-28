@@ -1,0 +1,57 @@
+.habilidades-container {
+  margin-top: 3.5rem;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; 
+}
+
+.habilidades-container h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: -5rem -10rem 0 0;
+}
+
+.habilidades-lista {
+  margin: -2rem -20rem 0 auto;
+}
+
+.habilidades-lista strong {
+  font-size: 1.1rem;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.habilidades-itens {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.habilidades-itens ul {
+  margin: 0;
+  padding: 0 10px 0 0;
+  list-style: disc inside;
+}
+
+
+.habilidades-circulos {
+  display: flex;
+  gap: 9px;
+  margin-bottom: 5px;
+}
+
+.habilidade-circulo {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #eab308;
+  background: transparent;
+  display: inline-block;
+}
+
+.habilidade-circulo.preenchido {
+  background: #eab308;
+  border: 2px solid #eab308;
+}
